@@ -168,9 +168,11 @@
   .header
     &::after
       right: -487px
+      filter: blur(65px)
     &::before
       left: -351px
     padding: 30px 0 30px 0
+    filter: blur(65px)
     &__logo
       &-bao
         max-width: 64px
@@ -180,6 +182,15 @@
     &__button
       font-size: 14px
       line-height: 17px
+    .faq
+      &::before
+        filter: blur(65px)
+  .tour
+    &::after
+      filter: blur(65px)
+  .support
+    &::before
+      filter: blur(655px)
   .participate
     &__time
       font-size: 18px
