@@ -23,11 +23,20 @@
                         Готовы показать все, на что способны? #[span Тогда вперед!]
                 a(href='#').participate__link Участвовать
                 .participate__image
+                    .participate__image-star
                     .participate__image-text Выплаты #[br] +$40
+                    //picture
+                    //    source(media="(min-width: 551px)" srcset="img/cat-desc.png")
+                    //    source(media="(min-width: 180px) and (max-width: 550px)" srcset="img/cat-mob.png")
+                    //    img(src="img/cat-desc.png" alt="bao-cat")
                     picture
-                    source(media="(min-width: 551px)" srcset="img/cat-desc.png")
-                    source(media="(min-width: 180px) and (max-width: 550px)" srcset="img/cat-mob.png")
-                    img(src="img/cat-desc.png" alt="bao-cat")
+                        source(media="(min-width: 551px)" srcset="img/iphone.png")
+                        source(media="(min-width: 180px) and (max-width: 550px)" srcset="img/phone-mob.png")
+                        img(src="img/iphone.png" alt="bao-cat").phone
+                    picture
+                        source(media="(min-width: 551px)" srcset="img/cat-min-desc.png")
+                        source(media="(min-width: 180px) and (max-width: 550px)" srcset="img/cat-min-mob.png")
+                        img(src="img/cat-min-desc.png" alt="bao-cat").cat
         section.faq
             .faq__container
                 h2.faq__title Как будет проходить турнир?

@@ -2,7 +2,7 @@ $blue: #000055
 $blue-darken: #00003D
 $magenta: #ff267e
 $green: #13FFBA
-$green-hover: #05b37c
+$green-hover: #06c98e
 $white: #ffffff
 $grey: #ededed
 $black: #29292B
@@ -70,6 +70,7 @@ body
       right: -80px
       top: -10px
       background: url("../img/plus.svg") no-repeat 50% 0/contain
+      animation: plus 5s ease
   &__ready
     grid-row: 1/2
     grid-column: 1/2
@@ -129,12 +130,34 @@ body
     padding: 9px 56px 11px
     background: $green
     border-radius: 74px
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
   &__image
     position: relative
     grid-row: 1/4
     grid-column: 2/3
-    margin-top: -51px
-    width: 113%
+    display: flex
+    justify-content: flex-end
+    &-star
+      position: absolute
+      width: 520px
+      height: 385px
+      background: url("../img/star.svg") no-repeat 50% 0/contain
+      top: -40px
+      right: -60px
+      animation: star 8s ease infinite
+
+    .phone
+      max-width: 500px
+      margin-right: -50px
+      animation: phone 3s ease
+    .cat
+      position: absolute
+      bottom: 0
+      left: 60px
+      width: 343px
+      animation: cat 3s ease
     &-text
       font-family: $font-rf-exp-800
       color: $white
@@ -147,10 +170,65 @@ body
       padding: 16px 33px 14px
       z-index: 4
       bottom: 0
-      left: -35px
+      left: 5px
+      transform: scale(0)
+      animation: text 2s ease 1s
+      animation-fill-mode: forwards
     img
       position: relative
       z-index: 3
+
+@keyframes text
+  0%
+    opacity: 0
+    transform: scale(0)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+    transform: scale(1)
+
+@keyframes star
+  0%
+    opacity: 0
+    transform: scale(1)
+  50%
+    opacity: 1
+    transform: scale(1.2)
+  100%
+    opacity: 0
+    transform: scale(1)
+
+@keyframes plus
+  0%
+    opacity: 0
+    transform: translateX(300px)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes phone
+  0%
+    opacity: 0
+    transform: translateX(100px)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes cat
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
 
 /*****************FAQ**************/
 
@@ -280,6 +358,9 @@ body
     padding: 9px 56px 11px
     background: $green
     border-radius: 74px
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
 
 /****************SUPPORT***************/
 
@@ -312,6 +393,9 @@ body
     position: relative
     &:not(:last-child)
       margin: 0 13px 0 0
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
   &__link
     position: absolute
     width: 70px
@@ -347,6 +431,9 @@ body
       padding: 23px 20px 21px
       background: $green
       border-radius: 100px
+      transition: background-color .3s ease
+      &:hover
+        background: $green-hover
       &:not(:last-child)
         margin: 0 20px 0 0
       img
