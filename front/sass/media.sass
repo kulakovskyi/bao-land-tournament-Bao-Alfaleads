@@ -1,3 +1,75 @@
+@media screen and (max-width: 1370px)
+  body
+    background: #100A15 url("../img/noise.png") repeat 50% 0/cover
+  //.header
+  //  background: url("../img/noise.png") repeat 50% 0/cover
+  //.participate
+  //  background: url("../img/noise.png") repeat 50% 0/cover
+  .header
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 490px
+      height: 490px
+      background: #8225FF
+      filter: blur(225px)
+      z-index: -1
+      pointer-events: none
+      top: -172px
+      left: -100px
+    &::after
+      content: ''
+      position: absolute
+      width: 490px
+      height: 490px
+      background: #8225FF
+      filter: blur(225px)
+      z-index: -1
+      pointer-events: none
+      top: -208px
+      right: -138px
+  .faq
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 490px
+      height: 490px
+      background: #8225FF
+      filter: blur(225px)
+      z-index: -1
+      pointer-events: none
+      top: 373px
+      left: -286px
+  .tour
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 490px
+      height: 490px
+      background: #8225FF
+      filter: blur(225px)
+      z-index: -1
+      pointer-events: none
+      top: 270px
+      right: -316px
+  .support
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 490px
+      height: 490px
+      background: #8225FF
+      filter: blur(225px)
+      z-index: -1
+      pointer-events: none
+      bottom: -255px
+      left: -223px
+
+
 @media screen and (max-width: 1275px)
   .participate
     &__image
@@ -15,6 +87,8 @@
 @media screen and (max-width: 1200px)
   .header
     padding: 30px 0 45px 0
+    &::after
+      top: 466px
   .participate
     &__container
       display: flex
@@ -92,6 +166,10 @@
 
 @media screen and (max-width: 700px)
   .header
+    &::after
+      right: -487px
+    &::before
+      left: -351px
     padding: 30px 0 30px 0
     &__logo
       &-bao
@@ -217,4 +295,72 @@
         img
           max-width: 22px
           margin: 0 10px 0 0
+
+@media screen and (max-width: 640px)
+  .participate
+    &__image
+      transform-origin: right center
+      transform: scale(0.8)
+      position: relative
+      right: 40px
+      margin: -25px 0
+
+@media screen and (max-width: 550px)
+  .participate
+    &__image
+      transform: scale(0.7)
+      position: relative
+      right: 40px
+      margin: -50px 0
+    &__container
+      &::before
+        width: 100%
+        right: 0
+        top: -90px
+
+@media screen and (max-width: 430px)
+  .header
+    &::after
+      right: -516px
+    &::before
+      left: -462px
+    padding: 30px 0 30px
+  .faq
+    &::before
+      left: -490px
+  .participate
+    &__image
+      transform: scale(0.6)
+      position: relative
+      right: 70px
+      margin: -75px 0
+    &__link
+      width: 100%
+      padding: 9px 15px 11px
+      text-align: center
+  .tour
+    &::after
+      right: -569px
+    &__table
+      width: 110%
+    &__link
+      width: 100%
+      padding: 9px 15px 11px
+      text-align: center
+
+@media screen and (max-width: 370px)
+  .participate
+    &__image
+      transform: scale(0.5)
+      position: relative
+      right: 95px
+      margin: -100px 0
+    .participate
+      &__title
+        font-size: 32px
+      &__text
+        font-size: 20px
+      line-height: 23px
+
+
 
