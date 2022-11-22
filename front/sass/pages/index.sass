@@ -22,9 +22,12 @@ body
 
 
 [class*=__container]
-  max-width: 1275px
+  max-width: 1305px
   margin: 0 auto
-  padding: 0 15px
+  padding: 0 30px
+  @media screen and (max-width: 600px)
+    padding: 0 15px
+    max-width: 1275px
 
 .wrapper
   overflow: hidden
@@ -69,6 +72,7 @@ body
       height: 100%
       right: -80px
       top: -10px
+      z-index: -1
       background: url("../img/plus.svg") no-repeat 50% 0/contain
       animation: plus 5s ease
   &__ready
