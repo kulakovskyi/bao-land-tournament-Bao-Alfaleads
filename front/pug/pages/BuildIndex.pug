@@ -1,84 +1,112 @@
-.popup
-  .popup__window
-    .popup__window-close
-    .popup__window-info
-      .popup__window-info-title Cum să participi?
-      p.popup__window-info-txt.
-        Intră în contul tău Favbet sau crează-ti un cont nou #[br]
-        Apasă pe butonul PARTICIPĂ din pagina de promoții
+.wrapper
+    header.header
+        .header__container
+            ul.header__logo
+                li.header__logo-bao
+                    img(src='img/logo.svg' alt='bao')
+                li.header__logo-alfaleads
+                    img(src='img/logo-two.svg' alt='alfaleads')
+            a(href='#').header__button English
+    main.main
+        section.participate
+            .participate__container
+                .participate__ready
+                    .participate__time 30.11 - 28.12
+                    h1.participate__title Ready-set-UP
+                    p.participate__text Арбитражный турнир
+                .participate__info
+                    p.
+                        Alfaleads и Bao Casino запускают турнир среди арбитражных команд
+                    p.
+                        Участвуйте в событии, получайте повышенные #[span выплаты +$40], а также шанс выиграть #[span iPhone 14 pro!]
+                    p.
+                        Готовы показать все, на что способны? #[span Тогда вперед!]
+                a(href='#').participate__link Участвовать
+                .participate__image
+                    .participate__image-text Выплаты #[br] +$40
+                    picture
+                    source(media="(min-width: 551px)" srcset="img/cat-desc.png")
+                    source(media="(min-width: 180px) and (max-width: 550px)" srcset="img/cat-mob.png")
+                    img(src="img/cat-desc.png" alt="bao-cat")
+        section.faq
+            .faq__container
+                h2.faq__title Как будет проходить турнир?
+                ul.faq__list
+                    li.faq__item
+                        .faq__item-number 1
+                        .faq__item-text Ready – каждому участнику предоставляется объем в 40 FTD на ряд офферов с повышенной ставкой в $40+
 
-      p.popup__window-info-txt.
-        Plasează bilete în secțiunile Sport, Live și Casino, acumulează puncte de Luni până Vineri a fiecărei săptămâni promoționale
-  .popup__bg
-.cosmic
+                    li.faq__item
+                        .faq__item-number 2
+                        .faq__item-text Set – вебмастеры начинают пролив, а мы – проверку качества трафика
 
-  .cosmic__main
-    .container
-      .cosmic__logo
-        img(src='img/logo.svg' alt='logo')
-      .cosmic__main-info
-        .cosmic__main-info-item
-          p MacBook Air
-          p Premiul principal
-        .cosmic__main-info-item
-          p Iphone 13 Pro
-          p În fiecare săptămână
-      .cosmic__main-welcome
-        .cosmic__main-welcome-title Aventura
-        .cosmic__main-welcome-phone
-        .cosmic__main-welcome-title Spațială
-      .cosmic__main-sunlight
-      .cosmic__main-planet
-      .cosmic__prizes
-        .cosmic__prizes-slider#prizes-slider
-          .cosmic__prizes-slider-item
-            picture.cosmic__prizes-slider-img
-              source(media="(min-width: 551px) and (min-height: 451px)" srcset="img/prize-1.png")
-              source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/prize-1-mob.png")
-              source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/prize-1-mob.png")
-              img(src="img/prize-1.png" alt="Favbet")
-            .cosmic__prizes-slider-name Iphone 13 Pro
-          .cosmic__prizes-slider-item
-            picture.cosmic__prizes-slider-img
-              source(media="(min-width: 551px) and (min-height: 451px)" srcset="img/prize-2.png")
-              source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/prize-2-mob.png")
-              source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/prize-2-mob.png")
-              img(src="img/prize-2.png" alt="Favbet")
-            .cosmic__prizes-slider-name MacBook Air
-          .cosmic__prizes-slider-item
-            picture.cosmic__prizes-slider-img
-              source(media="(min-width: 551px) and (min-height: 451px)" srcset="img/prize-3.png")
-              source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/prize-3-mob.png")
-              source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/prize-3-mob.png")
-              img(src="img/prize-3.png" alt="Favbet")
-            .cosmic__prizes-slider-name Novac na račun
-          .cosmic__prizes-slider-item
-            picture.cosmic__prizes-slider-img
-              source(media="(min-width: 551px) and (min-height: 451px)" srcset="img/prize-5.png")
-              source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/prize-5-mob.png")
-              source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/prize-5-mob.png")
-              img(src="img/prize-5.png" alt="Favbet")
-            .cosmic__prizes-slider-name free spins
-        .cosmic__prizes-controls
-          .controls-left.arrow-disabled
-            .controls-left__arrow
-          .controls-right
-            .controls-right__arrow
-      a(href="https://www.favbet.ro/ro/register/").cosmic__btn luând parte
-  .cosmic__how
-    .cosmic__how-title CUM SE PARTICIPA LA PROMOȚIE?
-    .cosmic__how-rocket
-      .cosmic__how-rocket-txt Apăsați butonul «Participă»
-      .cosmic__how-rocket-txt Pariați și câștigați puncte
-      .cosmic__how-rocket-txt Castiga premii
-    .cosmic__how-btn
-      .cosmic__how-btn-icon i
-      .cosmic__how-btn-txt Mai mult
-    .cosmic__how-icon
-  a(href="https://www.favbet.ro/ro/register/").cosmic__btn luând parte
-  .cosmic__pay
-    img(src='img/18.svg' alt='18+')
-    img(src='img/img-foot.png' alt='footer copy')
-    .cosmic__pay-text L1200662W001197.#[br] Se aplică T&C
+                    li.faq__item
+                        .faq__item-number 3
+                        .faq__item-text UP – те, кто не сошел с дистанции, проходят в финал, а повышенная ставка сохраняется до 250 FTD
+        section.tour
+            .tour__container
+                h2.tour__title Турнирная таблица
+                .tour__row
+                    .tour__table
+                        .tableResult
+                            .tableHead
+                                .tableHead__id PID
+                                .tableHead__score FTD*
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                            .tableRow
+                                .tableRow__id 100000
+                                .tableRow__score 1000000
+                    .tour__info
+                        h3.tour__subtitle Кто может участвовать?
+                        p.tour__text Любой вебмастер, зарегистрированный в партнерской программе Alfaleads
+                        p.tour__prize Все финалисты автоматически становятся участниками розыгрыша #[span iPhone 14 pro!] Его владельца определим с помощью рандомной лотереи.
+                        a(href='#').tour__link Участвовать
+        section.support
+            .support__container
+                .support__social
+                    p.support__social-text Итоги подведем после #[span 28 декабря], следите за обновлениями в наших соцсетях
+                    ul.support__list
+                        li.support__item
+                            a(href='#').support__link
+                            img(src='img/insta.svg' alt='instagram')
+                        li.support__item
+                            a(href='#').support__link
+                            img(src='img/facebook.svg' alt='facebook')
+                        li.support__item
+                            a(href='#').support__link
+                            img(src='img/in.svg' alt='in')
+                .support__linked
+                    .support__linked-text За подробностями обращайтесь к #[span Customer care team Alfaleads]
+                    ul.support__linked-list
+                        li.support__linked-item
+                            a(href='#').support__linked-link
+                            img(src='img/telegram.svg' alt='telegram')
+                            p alfa_sup
 
-  .cosmic__footer
+                        li.support__linked-item
+                            a(href='#').support__linked-link
+                            img(src='img/mail.svg' alt='mail')
+                            p info@alfaleads.net
+
+
+
+
+
+
